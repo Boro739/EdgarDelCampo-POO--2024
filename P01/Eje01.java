@@ -1,25 +1,46 @@
+/**
+ * Para utilizar la clase Scanner
+ */
 import java.util.Scanner;
 
+/**
+ * Clase Eje01
+ * Pide diferentes datos al usuario y los imprime en pantalla con un formato
+ * @author Del Campo Valdes Edgar Humberto
+ * @version 1.0
+ */
 public class Eje01{
     public static void main(String args[])
     {
 
+        /**
+         * Objeto sc de la clase Scanner para poder leer las entradas
+         */
         Scanner sc = new Scanner(System.in);
-        //Declarar el objeto e inicializarlo con el 
-        // objeto de entrada estandar predefinido 
         
+        /**
+         * Variable int que almacena la edad
+         */
         int edad;
-        //entrada de entero
 
+        /**
+         * Variables float que almacena la estatura y numero de segundos vividos
+         */
         float estatura, num_seg;
-        //entrada de float
 
+        /**
+         * Variable de tipo string que almacena nombre completo
+         */
         String nom_comp;
-        //entrada de cadena
 
+        /**
+         * Variable char que almacena una letra
+         */
         char letra_fav;
-        //entrada de caracter
 
+        /**
+         * Se pide al usuario sus datos (edad, estaura, nombre comleto, letra favorita y numero de segundos vividos hasta el momento)
+         */
         System.out.println("Ingrese su edad: ");
         edad=sc.nextInt();
 
@@ -36,6 +57,9 @@ public class Eje01{
         System.out.println("Ingrese el numero de segundos que ha vivido hasta el momento: ");
         num_seg=sc.nextFloat();
         
-        System.out.println("Hola " + nom_comp + "\nMides " + estatura + " metros y tu letra favorita es " + letra_fav + "\nHasta el momento has vivido " + num_seg + " segundos");
+        /**
+         * Imprime los datos con el formato requerido 
+         */
+        System.out.println("\nHola " + nom_comp + "\nMides " + estatura + " metros y tu letra favorita es " + letra_fav + "\nHasta el momento has vivido " + num_seg + " segundos");
     }
 }
